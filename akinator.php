@@ -7,7 +7,7 @@ include_once($_SERVER["DOCUMENT_ROOT"].'/API.php');
 include_once($_SERVER["DOCUMENT_ROOT"].'/db_akinator.php');
 include_once($_SERVER["DOCUMENT_ROOT"].'/AA.php');
 $data = json_decode(file_get_contents("php://input"));
-$VK = new API('089d42df638b4966278e37cae6d0fd0a30009ff9ec1e90bd4cb993f682d25163c1bd1144e7214038ab332', 'dsadasd234321', '33a98275', '149252310', $data);
+$VK = new API('089d42df638b4966278e37cae6d0fd0a30009ff9ec1e90b1234cb993f682d25163c1bd1144e7214038ab332', 'dsa123sd234321', '33228275', '149352310', $data); //Inicialization object class VK API. Args - tocken, secret code, confirmation code, id group, data. Edit on youre args.
 $AA = new Akinator();
 if($VK->getType() == 'confirmation'){
 	echo $VK->getConfirmationCode();
